@@ -51,28 +51,27 @@
     </style>
 </head>
 <body>
-
     <h1>Users</h1>
 
-
-    <div class="container">
+    {% for single_user in user %}
+    <div class="container" style="margin-bottom: 20px;">
         <h1>User Information</h1>
 
         <div class="info">
             <span class="label">Name:</span>
-            <span class="value">{{ user.name }}</span>
+            <span class="value">{{ single_user.name }}</span>
         </div>
 
         <div class="info">
             <span class="label">Age:</span>
-            <span class="value">{{ user.age }}</span>
+            <span class="value">{{ single_user.age }}</span>
         </div>
 
         <div class="info">
             <span class="label">City:</span>
-            <span class="value">{{ user.city }}</span>
+            <span class="value">{{ single_user.city }}</span>
         </div>
     </div>
-
-</body>
+    {% endfor %} 
+    </body>
 </html>
