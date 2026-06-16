@@ -8,7 +8,8 @@ def home():
         {"name": "John","age": 25,"city": "Mumbai"},
         {"name": "Suja","age": 40,"city": "Mumbai"},
         {"name": "Prachi","age": 20,"city": "Pune"},
-        {"name": "uday","age": 45,"city": "Pune"}
+        {"name": "uday","age": 45,"city": "Pune"},
+          {"name": "mahesh","age": 55,"city": "Pune"}
     ]
 
     return render_template("index.html", user=data)
